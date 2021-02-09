@@ -35,6 +35,5 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 include_directories(include)
-add_executable (example1 src/example1.cpp)
+add_executable(example1 src/example1.cpp)
 target_link_libraries(example1 gtest_main)
-add_test(NAME tests COMMAND example1)

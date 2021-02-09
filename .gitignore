@@ -19,7 +19,6 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
 *.lcov
 
 # nyc test coverage
@@ -106,4 +105,12 @@ dist
 # Extra Folders
 build/*
 
-*.gcno
+# Ignore gcov files
+*.gcov 
+*.gcno 
+*.gcda 
+*.bb 
+*.gcbb
+
+# Ignore binary directories
+bin/

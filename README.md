@@ -7,10 +7,10 @@ Demo Codes for CS253A Course
 This demo needs [`g++`](https://gcc.gnu.org/) installed in your system.
 We pass flags to `gcc` or `g++` as shown below for the file we want to test coverage on. 
 
-See the code in [`coverage.cpp`](cov/coverage.cpp) file for more information. 
+See the code in [`coverage.cpp`](coverage/coverage.cpp) file for more information. 
 
 ```bash 
-$ g++ -fprofile-arcs -ftest-coverage cov/coverage.cpp -o coverage
+$ g++ -fprofile-arcs -ftest-coverage coverage/coverage.cpp -o coverage
 ```
 
 Running the binary produced. 
@@ -43,7 +43,7 @@ Check the file `*.gcov` produced.
 
 ```bash
 File 'cov/coverage.cpp'
-Lines executed:100.00% of 11
+Lines executed:100.00% of 11ma
 Branches executed:100.00% of 26
 Taken at least once:61.54% of 26
 Calls executed:100.00% of 10
@@ -54,6 +54,22 @@ No executable lines
 No branches
 No calls
 Removing 'iostream.gcov'
+```
+
+## Makefile `gcov` example
+
+See the file in [`Makefile`](coverage/Makefile) for more information. 
+
+```bash
+$ make all
+$ make cov1
+$ make cov2
+```
+
+Clean up 
+
+```bash
+$ make clean 
 ```
 
 # Installing `googletest`
