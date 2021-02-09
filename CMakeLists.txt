@@ -35,5 +35,12 @@ if (CMAKE_VERSION VERSION_LESS 2.8.11)
 endif()
 
 include_directories(include)
+
 add_executable(example1 src/example1.cpp)
 target_link_libraries(example1 gtest_main)
+
+add_executable(example2 src/example2.cpp)
+target_link_libraries(example2 gtest_main)
+
+add_executable(example3 src/example3.cpp)
+target_link_libraries(example3 gtest_main)

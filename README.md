@@ -100,6 +100,8 @@ $ g++ src/example1.cpp -lgtest -lgtest_main -pthread
 $ ./example1
 ```
 
+There are `three` code examples in total. 
+
 # Running `gtests` with `cmake`
 
 Make a `build` directory and from that `build` directory, run the following commands
