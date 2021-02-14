@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/example3.dir/src/example3.cpp.o  -o example3  lib/libgtest_main.a lib/libgtest.a -lpthread 
